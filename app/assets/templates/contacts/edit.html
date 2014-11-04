@@ -1,11 +1,14 @@
 <h3>Contact Details</h3>
 
-<form name="form" ng-submit="submit()" class="form-horizontal" novalidate>
-  <div ng-show='message'>{{message}}</div>
+<form name="form" ng-submit="submit()" class="form-horizontal" >
+  <!-- <div ng-show='message'>{{message}}</div> novalidate -->
   <div class="control-group" ng-class="errorClass('firstname')">
     <label class="control-label" for="firstname">Firstname</label>
     <div class="controls">
       <input ng-model="contact.firstname" type="text" name="firstname"placeholder="Firstname" required autofocus>
+      <span class="help-block" ng-show="form.firstname.$invalid && form.firstname.$dirty">
+        {{errorMessage('firstname')}}
+      </span>
     </div>
   </div>
 
@@ -13,6 +16,9 @@
     <label class="control-label" for="lastname">Lastname</label>
     <div class="controls">
       <input ng-model="contact.lastname" type="text" name="lastname" placeholder="Lastname" required>
+      <span class="help-block" ng-show="form.lastname.$invalid && form.lastname.$dirty">
+        {{errorMessage('lastname')}}
+      </span>
     </div>
   </div>
 

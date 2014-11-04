@@ -81,4 +81,31 @@ app.controller("ContactsEditCtrl", function($scope, $routeParams, $location, Con
     });
     return result.join(", ");
   };
+  
+  // $scope.$watch('contact.firstname', function (newVal, oldVal) {
+  //    if (typeof(newVal) == "undefined") {
+  //      $scope.form['firstname'].$dirty = true;
+  //      $scope.form['firstname'].$setValidity("firstname is required", false);
+  //      $scope.message = $scope.message + "firstname is required";
+  //      return;
+  //    }
+  //  });
+  //  
+  //  $scope.$watch('contact.lastname', function (newVal, oldVal) {
+  //     if (typeof(newVal) == "undefined") {
+  //       $scope.form['lastname'].$dirty = true;
+  //       $scope.form['lastname'].$setValidity("lastname is required", false);
+  //       $scope.message = $scope.message + "lastname is required";
+  //       return;
+  //     }
+  //   }); 
+  // 
+  //   $scope.$watch('contact.age', function (newVal, oldVal) {
+  //      if (typeof(newVal) == "undefined") {
+  //        $scope.form['age'].$dirty = true;
+  //        $scope.form['age'].$setValidity("age is required", false);
+  //        $scope.message = $scope.message + "age is required";
+  //        return;
+  //      }
+  //    });
 });
