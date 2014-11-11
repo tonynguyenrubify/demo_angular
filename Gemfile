@@ -5,7 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -24,6 +24,28 @@ gem 'jquery-rails'
 
 # gem "less-rails"
 gem "twitter-bootstrap-rails"
+
+gem 'thin'
+
+gem "paperclip", "~> 3.5.2"
+gem 'devise'
+
+gem "cancan", '~> 1.6.10'
+gem 'uuidtools'
+gem 'meta_search', '1.1.3'
+gem 'will_paginate', '3.0.5'
+
+
+gem 'acts-as-taggable-on', '2.4.1'
+gem 'acts_as_commentable', '3.0.1'
+
+gem 'new_responds_to_parent', '~> 0.1.5'
+
+gem 'rails_12factor', group: :production
+
+# gem 'sidekiq-unique-jobs'
+# 
+# gem 'sidekiq'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
