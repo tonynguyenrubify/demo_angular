@@ -34,7 +34,6 @@ module Contacts
     # config.i18n.default_locale = :de
 
     # Configure the default encoding used in templates for Ruby 1.9.
-    config.assets.initialize_on_precompile = false
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
@@ -52,7 +51,8 @@ module Contacts
     # This will create an empty whitelist of attributes available for mass-assignment for all models
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
-    # config.active_record.whitelist_attributes = true
+    config.assets.initialize_on_precompile = false
+    config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
     config.assets.enabled = true
